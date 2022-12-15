@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f4f6f6;
+    background-image: url(../imagenes/nueva_imagen.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: repeat;
+
+}
+
+.titulo{
+    color:rgb(244, 235, 235);
+    text-shadow: 1px 5px 8px rgba(0,0,0,0.99);
+    text-align: center;
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, 0.308);
+    font-family: 'Amatic SC', cursive;
+   
+}
+
+.regalo{
+    color:rgb(244, 235, 235);
+    width: 70px;
+    animation: wiggle 2s linear infinite;
+}
+
+   
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+
+.pie{
+    color:rgb(244, 235, 235);
+    text-shadow: 1px 5px 8px rgba(0,0,0,0.99);
+    text-align: center;
+    font-size: 2em;
+
+    font-family: 'Amatic SC', cursive;
+}
+
+form{
+    color:rgb(244, 235, 235);
+}
+
+
+.card-img-overlay{
+    transform: scale(0);
+    transition: background .5s ease;
+    background-color: rgba(0,0,0,0.7);
+    font-family: 'Open Sans', sans-serif;
+}
+.card:hover .card-img-overlay{
+    transform: scale(1);
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: .5s ease;
+
+}
+footer{
+    
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.error{
+  color:rgb(244, 235, 235);
+}
