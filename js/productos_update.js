@@ -5,11 +5,11 @@ for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
 console.log(args)
-document.getElementById("txtId").value = parts[0][1]
-document.getElementById("txtNombre").value = parts[1][1]
-document.getElementById("txtPrecio").value = parts[2][1]
-document.getElementById("txtOcasion").value = parts[3][1]
-document.getElementById("txtImagen").value = parts[4][1]
+document.getElementById("txtId").value = decodeURIComponent(parts[0][1])
+document.getElementById("txtNombre").value = decodeURIComponent(parts[1][1])
+document.getElementById("txtPrecio").value = decodeURIComponent(parts[2][1])
+document.getElementById("txtOcasion").value = decodeURIComponent(parts[3][1])
+document.getElementById("txtImagen").value = decodeURIComponent(parts[4][1])
 
 function modificar() {
     let id = document.getElementById("txtId").value
